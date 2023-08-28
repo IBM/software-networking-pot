@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Setup TechZone Lab/reserve",
+  "id": "Setup TechZone Lab/reserve",
+  "title": "Reserve Lab",
+  "description": "In this section we will go Step by Step Reserving the TechZone Lab to be used with SANO PoT labs",
+  "source": "@site/docs/Setup TechZone Lab/reserve.md",
+  "sourceDirName": "Setup TechZone Lab",
+  "slug": "/Setup TechZone Lab/reserve",
+  "permalink": "/software-networking-pot/docs/Setup TechZone Lab/reserve",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "TechZone lab environment Overview",
+    "permalink": "/software-networking-pot/docs/Setup TechZone Lab/lab-env"
+  }
+}

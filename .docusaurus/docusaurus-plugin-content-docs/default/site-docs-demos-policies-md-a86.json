@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/policies",
+  "id": "Demos/policies",
+  "title": "zSystems - Mainframe Demo",
+  "description": "Demo Overview",
+  "source": "@site/docs/Demos/policies.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/policies",
+  "permalink": "/software-networking-pot/docs/Demos/policies",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Capacity Planning",
+    "permalink": "/software-networking-pot/docs/Demos/actions"
+  },
+  "next": {
+    "title": "Network Automation - QoS Issue Detection and Resolution with SevOne Automated Network Observability",
+    "permalink": "/software-networking-pot/docs/Demos/planning"
+  }
+}

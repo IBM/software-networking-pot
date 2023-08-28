@@ -1,0 +1,26 @@
+{
+  "unversionedId": "IBM SevOne Automated Network Observability/api",
+  "id": "IBM SevOne Automated Network Observability/api",
+  "title": "API",
+  "description": "In this lab we will learn how we can use the SevOne API to automate any action in SevOne.",
+  "source": "@site/docs/IBM SevOne Automated Network Observability/api.md",
+  "sourceDirName": "IBM SevOne Automated Network Observability",
+  "slug": "/IBM SevOne Automated Network Observability/api",
+  "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/api",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Reporting",
+    "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/reporting"
+  },
+  "next": {
+    "title": "IBM Rapid Network Automation (IRNA)",
+    "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/pliant"
+  }
+}

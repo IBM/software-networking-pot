@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/add-targets",
+  "id": "Demos/add-targets",
+  "title": "Executive Reporting Demo",
+  "description": "This demos shows how we can create executive/managerial reports in SevOne in a way that the audience can easily understand the status of the network and can control and maintain the SLAs.",
+  "source": "@site/docs/Demos/add-targets.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/add-targets",
+  "permalink": "/software-networking-pot/docs/Demos/add-targets",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Connections Demo",
+    "permalink": "/software-networking-pot/docs/Demos/lab-env"
+  },
+  "next": {
+    "title": "5G Telco Network Demo",
+    "permalink": "/software-networking-pot/docs/Demos/administration"
+  }
+}

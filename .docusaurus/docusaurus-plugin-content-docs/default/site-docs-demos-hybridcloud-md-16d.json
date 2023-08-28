@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/hybridcloud",
+  "id": "Demos/hybridcloud",
+  "title": "Hybrid Cloud Demo",
+  "description": "Demo Overview",
+  "source": "@site/docs/Demos/hybridcloud.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/hybridcloud",
+  "permalink": "/software-networking-pot/docs/Demos/hybridcloud",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Network Automation - QoS Issue Detection and Resolution with SevOne Automated Network Observability",
+    "permalink": "/software-networking-pot/docs/Demos/planning"
+  },
+  "next": {
+    "title": "Setup TechZone Lab",
+    "permalink": "/software-networking-pot/docs/category/setup-techzone-lab"
+  }
+}

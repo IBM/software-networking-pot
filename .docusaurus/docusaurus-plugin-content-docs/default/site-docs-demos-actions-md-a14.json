@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/actions",
+  "id": "Demos/actions",
+  "title": "Capacity Planning",
+  "description": "Value",
+  "source": "@site/docs/Demos/actions.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/actions",
+  "permalink": "/software-networking-pot/docs/Demos/actions",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NetFlow - IPFIX Demo",
+    "permalink": "/software-networking-pot/docs/Demos/explore-turbonomic"
+  },
+  "next": {
+    "title": "zSystems - Mainframe Demo",
+    "permalink": "/software-networking-pot/docs/Demos/policies"
+  }
+}

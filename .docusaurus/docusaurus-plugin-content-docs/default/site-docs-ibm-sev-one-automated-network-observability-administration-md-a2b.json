@@ -1,0 +1,26 @@
+{
+  "unversionedId": "IBM SevOne Automated Network Observability/administration",
+  "id": "IBM SevOne Automated Network Observability/administration",
+  "title": "User Administration",
+  "description": "Creating User Account",
+  "source": "@site/docs/IBM SevOne Automated Network Observability/administration.md",
+  "sourceDirName": "IBM SevOne Automated Network Observability",
+  "slug": "/IBM SevOne Automated Network Observability/administration",
+  "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/administration",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "TechZone lab environment",
+    "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/lab-env"
+  },
+  "next": {
+    "title": "Add Devices",
+    "permalink": "/software-networking-pot/docs/IBM SevOne Automated Network Observability/add-targets"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/planning",
+  "id": "Demos/planning",
+  "title": "Network Automation - QoS Issue Detection and Resolution with SevOne Automated Network Observability",
+  "description": "Demo Overview",
+  "source": "@site/docs/Demos/planning.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/planning",
+  "permalink": "/software-networking-pot/docs/Demos/planning",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "zSystems - Mainframe Demo",
+    "permalink": "/software-networking-pot/docs/Demos/policies"
+  },
+  "next": {
+    "title": "Hybrid Cloud Demo",
+    "permalink": "/software-networking-pot/docs/Demos/hybridcloud"
+  }
+}

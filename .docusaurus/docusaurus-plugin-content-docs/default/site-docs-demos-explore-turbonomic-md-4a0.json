@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/explore-turbonomic",
+  "id": "Demos/explore-turbonomic",
+  "title": "NetFlow - IPFIX Demo",
+  "description": "Overview Story",
+  "source": "@site/docs/Demos/explore-turbonomic.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/explore-turbonomic",
+  "permalink": "/software-networking-pot/docs/Demos/explore-turbonomic",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "5G Telco Network Demo",
+    "permalink": "/software-networking-pot/docs/Demos/administration"
+  },
+  "next": {
+    "title": "Capacity Planning",
+    "permalink": "/software-networking-pot/docs/Demos/actions"
+  }
+}

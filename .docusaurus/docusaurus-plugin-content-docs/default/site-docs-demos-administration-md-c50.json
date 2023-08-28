@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Demos/administration",
+  "id": "Demos/administration",
+  "title": "5G Telco Network Demo",
+  "description": "Demo Overview",
+  "source": "@site/docs/Demos/administration.md",
+  "sourceDirName": "Demos",
+  "slug": "/Demos/administration",
+  "permalink": "/software-networking-pot/docs/Demos/administration",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Executive Reporting Demo",
+    "permalink": "/software-networking-pot/docs/Demos/add-targets"
+  },
+  "next": {
+    "title": "NetFlow - IPFIX Demo",
+    "permalink": "/software-networking-pot/docs/Demos/explore-turbonomic"
+  }
+}
