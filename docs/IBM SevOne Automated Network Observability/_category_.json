@@ -1,0 +1,8 @@
+{
+  "label": "SANO POT",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": " SevOne Automation and Network Observability (PoT) provides hands-on experience using SANO in a controlled environment.  In this POT, you'll learn the basics of using SevOne NPM and Pliant.  Needs to Change You'll learn to connect Turbonomic to your source of truth called 'targets', perform administrative actions, explore basic usage of the solution, learn about the various actions and policies, building custom dashboards, and more."
+  }
+}

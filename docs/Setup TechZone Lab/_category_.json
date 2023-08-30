@@ -1,0 +1,8 @@
+{
+  "label": "Setup TechZone Lab",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": " Setting up a TechZone lab will enable you to run all the SevOne Automation and Network Observability (PoT) SANO Labs in a controlled environment. In this Section, you'll learn how to reserve a TechZone lab."
+  }
+}
