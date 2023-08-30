@@ -11,16 +11,16 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://github.ibm.com/',
+  url: 'https://github.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Software-Networking-Tech-Sellers/NPM-POT/',
+  baseUrl: '/IBM/software-networking-pot/',
   deploymentBranch: "gh-pages",
   
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Software-Networking-Tech-Sellers', // Usually your GitHub org/user name.
-  projectName: 'NPM-POT', // Usually your repo name.
+  organizationName: 'IBM', // Usually your GitHub org/user name.
+  projectName: 'software-networking-pot', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
