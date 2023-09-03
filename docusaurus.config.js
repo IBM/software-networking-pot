@@ -96,10 +96,6 @@ const config = {
                 href: "https://www.ibm.com/docs/en/sevone-npm/6.6",
               },
               {
-                label: "SevOne TechZone Lab",
-                href: "https://techzone.ibm.com/collection/641b10044aa54a0018326031",
-              },
-              {
                 label: "AIOps Turbonomic and Instana PoT",
                 href: "https://ibm.github.io/aiops-pot/",
               },
