@@ -270,6 +270,8 @@ $value = match[0];
 
 		ii. body: click on the square icon on the right side of the variable
 
+(Copy everything, including the brackets, but without the quotes)
+
 
 
 	{
@@ -316,7 +318,7 @@ $value = match[0];
 
 }
 
-
+"
 
 	c. Click save
 
@@ -355,4 +357,5 @@ $value = match[0];
 		vi. Use Default Parameters: ENABLED
 
 		vii. ENABLED
+
 
