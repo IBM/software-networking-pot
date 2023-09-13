@@ -110,7 +110,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-6. Click Create Workflow
+11. Click Create Workflow
 
 	a. Name: Your Name - CLI Interface Metrics
 
@@ -118,9 +118,9 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-7. Add variables to Start
+12. Add variables to Start
 
-	a. NMSCredentials
+	a. NMSCredentials:
 
 		i. Name: NMSCredentials
 
@@ -132,7 +132,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		v. Required
 
-	b. NMSCLICredentials
+	b. NMSCLICredentials:
 
 		i. Name: NMSCLICredentials
 
@@ -144,7 +144,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		v. Required
 
-	c. device
+	c. device:
 
 		i. Name: device
 
@@ -156,7 +156,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		v. Required
 
-	d. interfaces
+	d. interfaces:
 
 		i. interfaces
 
@@ -168,7 +168,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		v. Required
 
-	e. value
+	e. value:
 
 		i. value
 
@@ -182,15 +182,15 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-8. Change to Flow View
+13. Change to Flow View
 
 
 
-9. On the left hand side panel, Click on Common
+14. On the left hand side panel, Click on Common
 
 
 
-10. Select ForEach and drop it after the tile START
+15. Select ForEach and drop it after the tile START
 
 	a. Change name to ForEach_Interface
 
@@ -200,13 +200,13 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-11. In the loop branch, add a new tile, Common -> SSH 
+16. In the loop branch, add a new tile, Common -> SSH 
 
 	a. Change name to SSH_Command
 
 
 
-12. Change to Sequence View
+17. Change to Sequence View
 
 	a. Scroll down until you find the SSH_Command tile
 
@@ -226,11 +226,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-13. Change to Flow View
+18. Change to Flow View
 
 
 
-14. Add a new tile, Common -> function
+19. Add a new tile, Common -> function
 
 	a. Click on the tile to open the right side panel and complete the following fields: click on the square icon on the right side of the variable
 
@@ -252,7 +252,7 @@ $value = match[0];
 
 
 
-15. Add a new tile, Common -> DateTime -> TimestampNow
+20. Add a new tile, Common -> DateTime -> TimestampNow
 
 	a. No need to edit anything
 
@@ -260,7 +260,7 @@ $value = match[0];
 
 
 
-16. Add a new tile, SevOne -> REST v3 -> Devices -> Devices Data
+21. Add a new tile, SevOne -> REST v3 -> Devices -> Devices Data
 
 	a. Change name to SevOne_Ingest_Data
 
@@ -272,51 +272,51 @@ $value = match[0];
 
 (Copy everything, including the brackets, but without the quotes)
 
-
+	
 
 	{
 
-    "objects": [{
+		"objects": [{
 
-        "type": "Interface - Advanced Data",
+			"type": "Interface - Advanced Data",
 
-        "automaticCreation": true,
+			"automaticCreation": true,
 
-        "description": $ForEach_Interface.item,
+			"description": $ForEach_Interface.item,
 
-        "name": $ForEach_Interface.item + " - Advanced Data",
+			"name": $ForEach_Interface.item + " - Advanced Data",
 
-        "pluginName": "DEFERRED",
+			"pluginName": "DEFERRED",
 
 
 
-        "timestamps": [{
+			"timestamps": [{
 
-            "indicators": [{
+				"indicators": [{
 
-                "name": "Collisions",
+					"name": "Collisions",
 
-                "units": "Number",
+					"units": "Number",
 
-                "value": $value,
+					"value": $value,
 
-                "format": "GAUGE"
+					"format": "GAUGE"
 
-            }],
+				}],
 
-            "timestamp": $TimestampNow_1.result
+				"timestamp": $TimestampNow_1.result
 
-        }]
+			}]
 
-    }],
+		}],
 
-    "type": $device,
+		"type": $device,
 
-    "name": $device,
+		"name": $device,
 
-    "automaticCreation": true
+		"automaticCreation": true
 
-}
+	}
 
 "
 
@@ -324,7 +324,7 @@ $value = match[0];
 
 
 
-17. If there is an Assign tile at the end of the workflow, use that tile for the next config, if there is not, add a tile from Common -> Assign
+22. If there is an Assign tile at the end of the workflow, use that tile for the next config, if there is not, add a tile from Common -> Assign
 
 	a. variable: $result
 
@@ -336,13 +336,13 @@ $value = match[0];
 
 
 
-18. Go to JOBS
+23. Go to JOBS
 
 
 
-19. Click Create Job
+24. Click Create Job
 
-	a. Name: Monitor CLI Interface Data
+	a. Name: Monitor CLI Interface Data   
 
 		i. Flow: Your Name - CLI Interface Metrics
 
@@ -359,3 +359,6 @@ $value = match[0];
 		vii. ENABLED
 
 
+Example of Data Insight report
+
+![IBM SevOne Automated Network Observability](img/Lab_CLI/Img6.png)

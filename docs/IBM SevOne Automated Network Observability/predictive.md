@@ -399,25 +399,30 @@ If you click on the 'square' icon next to body, you should see something like th
 	c. Request Method: POST
 
 	d. Body:
+	
+(Copy everything, including the brakets, but without the quotes)
+
+"
 
 {
 
-	"NMSCredentials": "admin/SevOne"
+	"NMSCredentials": "admin/SevOne",
 
-	"deviceid": $deviceId
+	"deviceid": $deviceId,
 
-	"objectid": $objectId
+	"objectid": $objectId,
 
-	"indicatorname": "$indicatorName"
+	"indicatorname": "$indicatorName",
 
-	"seconds": 21600
+	"seconds": 21600,
 
-	"backtime": "Past 60 minutes"
+	"backtime": "Past 60 minutes",
 
 	"severity": 0 
 
 }
 
+"
 
 
 25. Click Save
@@ -482,7 +487,7 @@ If you click on the 'square' icon next to body, you should see something like th
 
 	f. Select the IRNA Predictive webhook and move it to the right side
 
-
+29. Click 'Save as New'
 
 ![IBM SevOne Automated Network Observability](img/Lab_Predictive/Img9.png)
 
