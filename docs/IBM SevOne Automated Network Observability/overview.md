@@ -31,6 +31,6 @@ Below is a high-level view of your Lab Architecture.
 
 •	**Data Insight:** it’s the reporting engine where all the dashboards, maps,… are built. This is the main server that regular users of SevOne would use.
 
-•	**Pliant:** automation server where the automation workflows are configured that allows us to build workflows to enhance data collection, self-heal the network, and automate repetitive tasks using a no-code approach
+•	**Rapid Network Automation:** automation server where the automation workflows are configured that allows us to build workflows to enhance data collection, self-heal the network, and automate repetitive tasks using a no-code approach
 
 

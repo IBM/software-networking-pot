@@ -14,7 +14,7 @@ In this lab we will review how we can run a schedule job that will syncronize us
 
 
 
-## Sync SevOne and Pliant Users
+## Sync SevOne and RNA Users
 
 
 
