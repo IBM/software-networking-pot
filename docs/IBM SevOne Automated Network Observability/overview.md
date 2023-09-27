@@ -23,7 +23,7 @@ This PoT does not intend to be a full training session on SevOne capabilities, t
 
 
 ## Architecture
-Below is a high-level view of your Lab Architecture.
+Below is a high-level view of your TechZone Lab Architecture.
 
 ![IBM SevOne Automated Network Observability](img/labenv/design.png)
 

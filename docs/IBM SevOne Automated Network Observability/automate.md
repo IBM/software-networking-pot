@@ -10,7 +10,13 @@ sidebar_position: 13
 
 
 
-In this lab we will review how we can run a schedule job that will syncronize users between different tools
+In this lab we will review how we can run a schedule job that will syncronize users between different tools.
+
+Keep tools in sync is vital, however that requires executing lots of repetitive tasks. With Rapid Network Automation we can automate those tasks and run them either on demand or a specific frequency.
+
+In this lab we are synchronizing the users that can access SevOne adn RNA (imagine the customer doesn't have a centralised RADIUS server and they create accounts manually). What we do in this lab is read the users in SevOne that are part of a role, check if those users exist in RNA, and if they don't, we create those users with the credentials that we have defined. We also create a job to execute this workflow every hour to make sure the users are always synchronized.
+
+This ways we are sure the users are synchronized and we don't need to remember to sync them manually.
 
 
 

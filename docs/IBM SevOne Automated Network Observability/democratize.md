@@ -10,6 +10,10 @@ sidebar_position: 12
 
 In this lab we will review how we can provide access to network automation capabilities to any user of our company, democratizing the access to network automation to anyone, not needing any scripting or automation skills.
 
+Not everyone in the company has access to create their own monitors/objects in SevOne, normally only admins do. However, in other to increase efficiency in internal processes, it would be good to have some kind of portal that allows people to create their own monitors, without the need of giving full access to the SevOne platform.
+
+In this lab we are allowing users to create TCP monitors (PortShaker) on demand using the Automation Center, therefore they don't need admin access to the SevOne portal, they can create the TCP monitors on their own in a very easy way, reducing the waste of time and hassle on the SevOne admins.
+
 
 
 ## Monitor New Metrics in SevOne - Adding PortShaker Monitor
@@ -140,7 +144,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 	a. authKey: $NMSCredentials
 
-	b. name -> value: $Device_Name
+	b. body -> name -> value: $Device_Name
 
 
 
@@ -156,10 +160,10 @@ If SevOne authentication has already been created, please skip this block of act
 
 	a. authKey: $NMSCredentials
 
-	b. names -> click on the pencil icon and paste the following text:
+	b. body -> names -> click on the pencil icon and paste the following text:
 
-
-
+(without the quotes)
+"
 [{
 
     "fuzzy": true,
@@ -167,7 +171,7 @@ If SevOne authentication has already been created, please skip this block of act
     "value": "PortShaker"
 
 }]
-
+"
 
 
 ![IBM SevOne Automated Network Observability](img/Lab_PortShaker/Img5.png)
@@ -182,7 +186,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 	a. authKey: $NMSCredentials
 
-	b. pluginId: $Find_Plugin.result.plugins[0].id
+	b. body -> pluginId: $Find_Plugin.result.plugins[0].id
 
 18. Add a new tile, Common -> If
 
@@ -234,7 +238,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-23. Add a new tile, SevOne -> REST v2 -> Discovert -> Run Discover Device
+23. Add a new tile, SevOne -> REST v2 -> Discovery -> Run Discover Device
 
 24. Change name of the tile to SevOne_Discover
 
@@ -260,11 +264,12 @@ If SevOne authentication has already been created, please skip this block of act
 
 	a. authKey: $NMSCredentials
 
-	b. body -> deviceIds: [ $Find_Device.result.devices[0].id ] 
+	b. body:
+		i. deviceIds: [ $Find_Device.result.devices[0].id ] 
 
-	c. body -> name -> value: $Service_Name
+		ii. name -> value: $Service_Name
 
-	d. body -> objectTypeIds: [ $Find_Object_Type.result.objectTypes[0].id ] 
+		iii. objectTypeIds: [ $Find_Object_Type.result.objectTypes[0].id ] 
 
 	
 

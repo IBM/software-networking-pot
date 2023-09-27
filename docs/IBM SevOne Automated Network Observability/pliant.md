@@ -7,6 +7,16 @@ sidebar_position: 11
 ## Overview
 In this lab we will learn how we can use SevOne automation capabilities to automate actions in SevOne without the need of coding.
 
+In this lab we will configure RNA to change the polling frequency of an object in SevOne when an alert is triggered on that object. For example, this could be used when SevOne detects that a device stopped replying to ping (ICMP). As the normal polling frequency is 5 minutes, that would mean that when the device comes back up (starts replying to ICMP again), it might take up to 5 minutes (polling frequency) for SevOne to detect it. 
+
+Therefore, configuring the following workflow, we would be able to change the polling frequency to 10 seconds (instead of 5 minutes), when we detect that the device went down, in order to detect when the device comes back up faster (up to 10 seconds, compared with the 5 minutes by default). 
+
+This configuration can be used in multiple situations, not only on ICMP, for example:
+* When errors appear on an interface
+* When traffic is higher than 90% so we get a more clear view of the traffic spikes
+* When CPU is high, so we get a closer look when the CPU becomes less busy
+* When firewall rule hit counts goes abnormaly high, to understand if this is some kind of attack
+
 
 # High Frequency Polling
 

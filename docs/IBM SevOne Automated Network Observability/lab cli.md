@@ -12,6 +12,14 @@ sidebar_position: 16
 
 In this lab we will review how we can monitor performance data that comes from CLI commands.
 
+SevOne is capable or monitoring any kind of time series data, however only a few protocols are supported out of the box (SNMP, ICMP, Netflow....). However, there is a framework called Universal Collector that allows us to monitor any time of data, regardless of the source/protocol.
+
+In some legacy devices, some of the data that we want to capture is only available using CLI commands. Using Universal Collector we can execute these commands, find the data we want, and ingest that data back into SevOne.
+
+In this lab we are executing a CLI command to get a specific metric (collisions) that is not available using any other method. Then, using regular expressions (regex), we find the metric that we are interested on, and using the SevOne API, ingest that data back into SevOne. In this lab we are doing this on two interfaces of the same device, but it could be configured to go through a list of devices and a different list of interfaces.
+
+
+
 
 
 ## Prerequisites

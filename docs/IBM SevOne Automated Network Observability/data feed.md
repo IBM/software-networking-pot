@@ -10,7 +10,13 @@ sidebar_position: 14
 
 
 
-In this lab we will review how we can collect new sources of data
+In this lab we will review how we can collect new sources of data.
+
+SevOne is capable or monitoring any kind of time series data, however only a few protocols are supported out of the box (SNMP, ICMP, Netflow....). However, there is a framework called Universal Collector that allows us to monitor any time of data, regardless of the source/protocol.
+
+In this lab we are collecting data that is available only using REST API calls. In this case, we are collecting data from the SevOne API, but it could be done with any other API available (as in this lab we only have access to SevOne, it makes sense to use the SevOne API as source of data). 
+
+The data we are collecting is the number of active alerts triggered in SevOne, and we are ingesting this data back into SevOne to monitor this metric. This is an important metric to monitor, because if we have an abnormal high level of alerts triggered, that would mean that something big might be happening on the network.
 
 
 

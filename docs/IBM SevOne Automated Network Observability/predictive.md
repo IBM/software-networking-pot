@@ -10,7 +10,19 @@ sidebar_position: 15
 
 
 
-In this lab we will review how we can create proactive alerts based on anomaly detection and predictive behabiour
+In this lab we will review how we can create proactive alerts based on anomaly detection and predictive behaviour.
+
+One of the ways to become predictive is to monitor what will happen in the future if a metric keeps behaving in a specific way. Lots of tools can do capacity forecast, however this is something that they do once a day and considering long periods of historical data, but what happens when the metric starts behaving abnormally only for the last 30 minutes? 
+
+SevOne can generate notifications when an anomaly is detected on a metric, however that doesn't mean for sure that there is a potential future issue. But what we can do is, once we have detected an anomaly, trigger an action to check how the future utilization of that metric will be (say in the next 24 hours) to **predict** if that's a potential future issue or not.
+
+This is what we are doing in this lab:
+* First, we are generating an alert when we detect an anomaly on one of the metrics
+* Second, we check how the future behaviour of this metric
+* Third, if the future behaviour of the metric goes over 100% utilization, then we trigger a new alert (Emergency alert) notifying that this is a real issue
+
+Therefore, what we are doing here is predictively detecting potential future issues based on short term historical data abnormalities.
+
 
 
 
@@ -412,7 +424,7 @@ If you click on the 'square' icon next to body, you should see something like th
 
 	"objectid": $objectId,
 
-	"indicatorname": "$indicatorName",
+	"indicatorname": "ifHCInOctets",
 
 	"seconds": 21600,
 
@@ -465,27 +477,11 @@ If you click on the 'square' icon next to body, you should see something like th
 
 		vi. Aggregation: Average
 
-	b. Click on the menu item under Rules -> Create New	
+	b. Override Webhook per Alert: Enabled
 
-	c. Click on the menu item under Conditions -> Create New
+	c. One Webhook per Alert: disabled
 
-		i. Indicator: HC Out Octets
-
-		ii. Type: Baseline Percentage
-
-		iii. Comparison: greater than
-
-		iv. Threshold: 130 percent of baseline
-
-		v. Duration: 15 minutes
-
-		vi. Aggregation: Average
-
-	d. Override Webhook per Alert: Enabled
-
-	e. One Webhook per Alert: disabled
-
-	f. Select the IRNA Predictive webhook and move it to the right side
+	d. Select the IRNA Predictive webhook and move it to the right side
 
 29. Click 'Save as New'
 

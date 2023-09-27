@@ -1,0 +1,8 @@
+{
+  "label": "NS1 POT",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "NS1 (PoT) provides hands-on experience using NS1 DNS."
+  }
+}
