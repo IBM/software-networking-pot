@@ -352,4 +352,30 @@ If SevOne authentication has already been created, please skip this block of act
 
 ![IBM SevOne Automated Network Observability](img/Lab_Alerts/Img8.png)
 
+## Review
+
+21. Go to DI -> Create Report
+
+22. Click on + Add Widget
+
+	a. Performance Metrics
+
+		i. Resource Type: Device Groups
+			
+			1. All Device Groups
+
+		ii. Resource Type: Object Type
+
+			1. Alerts
+
+		iii. Resource Type: Indicator Type
+
+			1. Alerts
+
+	b. Click 'Add to resources' 
+
+	c. Click 'Run'
+
+![IBM SevOne Automated Network Observability](img/Lab_Alerts/Img9.png)
+
 
