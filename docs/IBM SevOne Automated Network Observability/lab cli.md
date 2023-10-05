@@ -66,7 +66,7 @@ In this lab we are executing a CLI command to get a specific metric (collisions)
 
 
 
-If SevOne authentication has already been created, please skip this block of actions and continue to step 10.
+If SevOne authentication has already been created, please skip this block of actions and continue to step 9.
 
 
 
@@ -146,7 +146,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		ii. Type: Authentication -> SevOne
 
-		iii. Default Value: "admin/SevOne"
+		iii. Default Value: "admin/SevOne_NMS_CLI"
 
 		iv. In
 
@@ -248,7 +248,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-const match = $SSH_Command.result.match(/collisions (\d+)/g);
+const match = $SSH_Command.result.match(/(?<=collisions )(\d+)/g);
 
 $value = match[0];
 
