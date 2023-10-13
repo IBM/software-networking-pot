@@ -271,33 +271,33 @@ NOTE: For a real world scenario, we would recommend using 'Shed Load' rather tha
 	
 	a. Change name to NS1_sources
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. authKey: $NS1Credentials
 
-29. Add a new tile, Common -> ForEach
+29. Add a new building block, Common -> ForEach
 
 	a. Change name to ForEach_source
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. list: $NS1_sources.result
 
 ![IBM NS1](img/SANO_NS1/Img_RNA_4.png)
 
-30. On the right side of the foreach, add a new tile, Common -> If
+30. On the right side of the foreach, add a new building block, Common -> If
 
 	a. Change name to If_same_device
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. condition: $ForEach_source.item.name == $Devicename
 
-31. On the TRUE side of the If, add a new tile, Common -> Assign
+31. On the TRUE side of the If, add a new building block, Common -> Assign
 	
 	a. Change name to Assign_url
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. variable: $url
 		
@@ -305,21 +305,21 @@ NOTE: For a real world scenario, we would recommend using 'Shed Load' rather tha
 
 ![IBM NS1](img/SANO_NS1/Img_RNA_5.png)
 
-32. Add a new tile, Common -> String -> StringRemove
+32. Add a new building block, Common -> String -> StringRemove
 	
 	a. Change name to CleanValue
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. str1: $Value
 		
 		ii. str2: "Threshold triggered -- "
 
-33. Add a new tile, Common -> Assign
+33. Add a new building block, Common -> Assign
 	
 	a. Change name to Assign_body
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. variable: $body[$Devicename]
 		
@@ -334,11 +334,11 @@ NOTE: For a real world scenario, we would recommend using 'Shed Load' rather tha
 
 }
 
-34. Add a new tile, Common -> HttpRequest
+34. Add a new building block, Common -> HttpRequest
 	
 	a. Change name to Send_data
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 		
 		i. method: POST
 
@@ -356,7 +356,7 @@ NOTE: For a real world scenario, we would recommend using 'Shed Load' rather tha
 
 		v. body: $body
 
-35. Move the last tile of the workflow 'Assign_1' next to 'Send_data'. You can do 'drag and drop'
+35. Move the last building block of the workflow 'Assign_1' next to 'Send_data'. You can do 'drag and drop'
 
 	a. Change value to '$Send_data.result'
 

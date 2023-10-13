@@ -210,11 +210,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-14. Select "Alerts Alerts" and drop it after the tile START
+14. Select "Alerts Alerts" and drop it after the building block START
 
 	a. Change name to SevOne_Alerts
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -226,11 +226,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-15. Add a new tile, Common -> Array -> ArraySize
+15. Add a new building block, Common -> Array -> ArraySize
 
 	a. Change name to Number_Alerts
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. array: $SevOne_Alerts.result.alerts
 
@@ -238,7 +238,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-16. Add a new tile, Common -> DateTime -> TimestampNow
+16. Add a new building block, Common -> DateTime -> TimestampNow
 
 	a. No need to edit anything
 
@@ -246,11 +246,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-17. Add a new tile, SevOne -> REST v3 -> Devices -> Devices Data
+17. Add a new building block, SevOne -> REST v3 -> Devices -> Devices Data
 
 	a. Change name to SevOne_Ingest_Data
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -312,9 +312,9 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-18. If there is an 'Assign' tile, use it for the next step, otherwise go to Common -> Assign, and add the tile to the end of the workflow
+18. If there is an 'Assign' building block, use it for the next step, otherwise go to Common -> Assign, and add the building block to the end of the workflow
 
-	a. Click on the tile to open the right side panel and complete the following fields
+	a. Click on the building block to open the right side panel and complete the following fields
 
 		i. variable: $result
 

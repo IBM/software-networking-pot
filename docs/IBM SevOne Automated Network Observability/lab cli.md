@@ -198,17 +198,17 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-15. Select ForEach and drop it after the tile START
+15. Select ForEach and drop it after the building block START
 
 	a. Change name to ForEach_Interface
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. list: $interfaces
 
 
 
-16. In the loop branch, add a new tile, Common -> SSH 
+16. In the loop branch, add a new building block, Common -> SSH 
 
 	a. Change name to SSH_Command
 
@@ -216,7 +216,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 17. Change to Sequence View
 
-	a. Scroll down until you find the SSH_Command tile
+	a. Scroll down until you find the SSH_Command building block
 
 	b. Complete the following fields:
 
@@ -238,9 +238,9 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-19. Add a new tile, Common -> function
+19. Add a new building block, Common -> function
 
-	a. Click on the tile to open the right side panel and complete the following fields: click on the square icon on the right side of the variable
+	a. Click on the building block to open the right side panel and complete the following fields: click on the square icon on the right side of the variable
 
 
 
@@ -260,7 +260,7 @@ $value = match[0];
 
 
 
-20. Add a new tile, Common -> DateTime -> TimestampNow
+20. Add a new building block, Common -> DateTime -> TimestampNow
 
 	a. No need to edit anything
 
@@ -268,11 +268,11 @@ $value = match[0];
 
 
 
-21. Add a new tile, SevOne -> REST v3 -> Devices -> Devices Data
+21. Add a new building block, SevOne -> REST v3 -> Devices -> Devices Data
 
 	a. Change name to SevOne_Ingest_Data
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -332,7 +332,7 @@ $value = match[0];
 
 
 
-22. If there is an Assign tile at the end of the workflow, use that tile for the next config, if there is not, add a tile from Common -> Assign
+22. If there is an Assign building block at the end of the workflow, use that building block for the next config, if there is not, add a building block from Common -> Assign
 
 	a. variable: $result
 

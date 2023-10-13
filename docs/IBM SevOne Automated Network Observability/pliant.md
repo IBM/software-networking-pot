@@ -57,8 +57,8 @@ This configuration can be used in multiple situations, not only on ICMP, for exa
 
 8.	On the left hand side panel, search for SevOne -> REST v3 -> Polling -> Polling Remove HFP Object
 
-    - a. Drag and drop that tile to the first position in the workflow after Start
-    - b. Change Name of tile to SevOne_Delete_HFP
+    - a. Drag and drop that building block to the first position in the workflow after Start
+    - b. Change Name of building block to SevOne_Delete_HFP
     - c. Complete the details in Object Editor
     - d. AuthKey: $NMSCredentials 
     - e. deviceId: $deviceid
@@ -76,10 +76,10 @@ This configuration can be used in multiple situations, not only on ICMP, for exa
     
 ![IBM SevOne Automated Network Observability](img/Lab%209%20-%208.png)
 
-11.	On the left hand side panel, go to Common -> If and move it under the last tile 
+11.	On the left hand side panel, go to Common -> If and move it under the last building block 
     - a. Condition-> $action == "Set" 
-    - b. On the TRUE branch add tile SevOne -> REST v3 -> Polling -> Polling Add Hfp Object    
-        - i. Name of the Tile: SevOne_Add_HFP    
+    - b. On the TRUE branch add building block SevOne -> REST v3 -> Polling -> Polling Add Hfp Object    
+        - i. Name of the building block: SevOne_Add_HFP    
         - ii. authKey: $NMSCredentials
             - 1. Body:
                 - a. DeviceId: $deviceid
@@ -89,11 +89,11 @@ This configuration can be used in multiple situations, not only on ICMP, for exa
 
 ![IBM SevOne Automated Network Observability](img/Lab%209%20-%208.png)
 
-12.	Click on the + icon after the SevOne_Add_HFP tile statement and add ‘Assign’
+12.	Click on the + icon after the SevOne_Add_HFP building block statement and add ‘Assign’
     - a. Variable: $result    
     - b. $value: $SevOne_Add_HFP.result
     
-13.	Delete any other tile after the one you just created (There might be another Assign tile with ‘Hello World’ that we don’t know, so please remove it)
+13.	Delete any other building block after the one you just created (There might be another Assign building block with ‘Hello World’ that we don’t know, so please remove it)
 
 ![IBM SevOne Automated Network Observability](img/Lab%209%20-%209.png)
 

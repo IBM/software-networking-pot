@@ -130,9 +130,9 @@ If SevOne authentication has already been created, please skip this block of act
 
 8. On the left hand side panel, search for SevOne, Click on SevOne -> REST v3 -> Metadata
 
-9. Select Metadata Devices (POST) and drop it after the tile START
+9. Select Metadata Devices (POST) and drop it after the building block START
 
-10. Change name of the tile to Find_Device
+10. Change name of the building block to Find_Device
 
 
 
@@ -140,7 +140,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-11. Click on the tile to open the right hand side panel and complete it with these options:
+11. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -152,11 +152,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-12. Add a new tile, SevOne -> REST v3 -> Metadata -> Metadata Plugins (POST)
+12. Add a new building block, SevOne -> REST v3 -> Metadata -> Metadata Plugins (POST)
 
-13. Change name of the tile to Find_Plugin
+13. Change name of the building block to Find_Plugin
 
-14. Click on the tile to open the right hand side panel and complete it with these options:
+14. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -178,21 +178,21 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-15. Add a new tile, SevOne -> REST v3 -> Metadata -> Metadata Object Types (POST)
+15. Add a new building block, SevOne -> REST v3 -> Metadata -> Metadata Object Types (POST)
 
-16. Change name of the tile to Find_Object_Type
+16. Change name of the building block to Find_Object_Type
 
-17. Click on the tile to open the right hand side panel and complete it with these options:
+17. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
 	b. body -> pluginId: $Find_Plugin.result.plugins[0].id
 
-18. Add a new tile, Common -> If
+18. Add a new building block, Common -> If
 
-	a. Change name of the tile to Add_or_Remove
+	a. Change name of the building block to Add_or_Remove
 
-	b. Click on the tile to open the right hand side panel:
+	b. Click on the building block to open the right hand side panel:
 
 		i. condition: $Action == "add"
 
@@ -202,11 +202,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-19. On the TRUE branch of the if, add a new tile, SevOne -> REST v2 -> Objects -> Create Object
+19. On the TRUE branch of the if, add a new building block, SevOne -> REST v2 -> Objects -> Create Object
 
-20. Change name of the tile to SevOne_Create_PortShaker
+20. Change name of the building block to SevOne_Create_PortShaker
 
-21. Click on the tile to open the right hand side panel and complete it with these options:
+21. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -228,7 +228,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-22. Add a new tile, Common -> Assign
+22. Add a new building block, Common -> Assign
 
 	a. Change the name to Result
 
@@ -238,11 +238,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-23. Add a new tile, SevOne -> REST v2 -> Discovery -> Run Discover Device
+23. Add a new building block, SevOne -> REST v2 -> Discovery -> Run Discover Device
 
-24. Change name of the tile to SevOne_Discover
+24. Change name of the building block to SevOne_Discover
 
-25. Click on the tile to open the right hand side panel and complete it with these options:
+25. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -256,11 +256,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 26. Now let's focus on the FALSE branch of the if
 
-27. Add a new tile, SevOne -> REST v3 -> Metadata -> Metadata Object (POST)
+27. Add a new building block, SevOne -> REST v3 -> Metadata -> Metadata Object (POST)
 
 28. Change name to Find_Object
 
-29. Click on the tile to open the right hand side panel and complete it with these options:
+29. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -279,11 +279,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-30. Add a new tile, SevOne -> REST v2 -> Objects -> Delete Object by Id
+30. Add a new building block, SevOne -> REST v2 -> Objects -> Delete Object by Id
 
 31. Change name to SevOne_Delete_Object
 
-32. Click on the tile to open the right hand side panel and complete it with these options:
+32. Click on the building block to open the right hand side panel and complete it with these options:
 
 	a. authKey: $NMSCredentials
 
@@ -291,7 +291,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 	c. id: $Find_Object.result.objects[0].id
 
-33. Add a new tile, Common -> Assign
+33. Add a new building block, Common -> Assign
 
 	a. Change the name to Result2
 
@@ -305,7 +305,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-34. If there is any other tile after these, please delete it
+34. If there is any other building block after these, please delete it
 
 
 
@@ -319,7 +319,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 	a. Title: TCP Port Monitor
 
-3. Click on Create Tile
+3. Click on Create tile
 
 	a. Select workflow: Your Name - Create PortShaker
 
@@ -349,7 +349,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-9. Click on Create Tile
+9. Click on Create tile
 
 	a. Select workflow: Your Name - Create PortShaker
 

@@ -178,11 +178,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-9. Select "Data Performance Metrics" and drop it after the tile START
+9. Select "Data Performance Metrics" and drop it after the building block START
 
 	a. Change name to SevOne_Forecast
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -222,11 +222,11 @@ If you click on the 'square' icon next to body, you should see something like th
 
 
 
-10. Add a new tile, Common -> Assign
+10. Add a new building block, Common -> Assign
 
 	a. Change name to Future_Value
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. variable: $fvalue
 
@@ -236,7 +236,7 @@ If you click on the 'square' icon next to body, you should see something like th
 
 
 
-11. Add a new tile, Common -> DateTime -> TimestampNowms
+11. Add a new building block, Common -> DateTime -> TimestampNowms
 
 	a. No need to edit anything
 
@@ -244,21 +244,21 @@ If you click on the 'square' icon next to body, you should see something like th
 
 
 
-12. Add a new tile, Common -> If
+12. Add a new building block, Common -> If
 
 	a. Change name to If_future_value_more_than_100
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. condition: $fvalue >= 100
 
 
 
-13. On the TRUE branch of the IF, add a new tile, SevOne -> REST API v2 -> Alerts -> createAlert
+13. On the TRUE branch of the IF, add a new building block, SevOne -> REST API v2 -> Alerts -> createAlert
 
 	a. Change name to SevOne_Create_Alert
 
-	a. Click on the tile to open the right side panel and complete the following fields
+	a. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -286,7 +286,7 @@ If you click on the 'square' icon next to body, you should see something like th
 
 
 
-14. If there is an Assign tile at the end of the workflow, use that tile for the next config, if there is not, add a tile from Common -> Assign
+14. If there is an Assign building block at the end of the workflow, use that building block for the next config, if there is not, add a building block from Common -> Assign
 
 	a. variable: $result
 

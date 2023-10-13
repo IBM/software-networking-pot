@@ -158,11 +158,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-11. Select Filter Roles and drop it after the tile START
+11. Select Filter Roles and drop it after the building block START
 
 	a. Change name to SevOne_Find_Role
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -174,11 +174,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-12. Add a new tile, SevOne -> REST v3 -> Users -> Users Users (POST)
+12. Add a new building block, SevOne -> REST v3 -> Users -> Users Users (POST)
 
 	a. Change name to SevOne_List_Users
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $NMSCredentials
 
@@ -190,11 +190,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-13. Add a new tile, Common -> ForEach
+13. Add a new building block, Common -> ForEach
 
 	a. Change name to ForEach_SevOne_User
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. list: $SevOne_List_Users.result.users
 
@@ -206,11 +206,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-14. Inside the ForEach, add a new tile, Common -> Assign
+14. Inside the ForEach, add a new building block, Common -> Assign
 
 	a. Change name to Initiliaze_variable
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. variable: $user_found
 
@@ -220,17 +220,17 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-15. Add a new tile, Common -> Try
+15. Add a new building block, Common -> Try
 
 
 
 
 
-16. Inside the Try, add a new tile, Pliant -> user-controller -> readUser
+16. Inside the Try, add a new building block, Pliant -> user-controller -> readUser
 
 	a. Change name to IRNA_Find_User
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $IRNACredentials
 
@@ -242,11 +242,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-17. Add a new tile, Common -> Assign
+17. Add a new building block, Common -> Assign
 
 	a. Change name to IRNA_User_Found
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. variable: $user_found
 
@@ -254,11 +254,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-18. After the END of the TRY block, add a new tile, Common -> If
+18. After the END of the TRY block, add a new building block, Common -> If
 
 	a. Change name to If_user_not_found
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. condition: $user_found == false
 
@@ -266,11 +266,11 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-19. On the TRUE branch of the IF, Add a new tile, Pliant -> user-controller -> createUser
+19. On the TRUE branch of the IF, Add a new building block, Pliant -> user-controller -> createUser
 
 	a. Change name to IRNA_Create_User
 
-	b. Click on the tile to open the right side panel and complete the following fields
+	b. Click on the building block to open the right side panel and complete the following fields
 
 		i. authKey: $IRNACredentials
 
@@ -300,7 +300,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 
 
-20. Delete any other tiles after that block (There might be an ASSIGN block that can be removed)
+20. Delete any other building blocks after that block (There might be an ASSIGN block that can be removed)
 
 
 
