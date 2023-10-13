@@ -267,7 +267,7 @@ NOTE: For a real world scenario, we would recommend using 'Shed Load' rather tha
 ![IBM NS1](img/SANO_NS1/Img_RNA_3.png)
 
 
-28. On the left hand side panel, search for NS1, Click on NS1 -> Data Sources & Feeds -> Data Sources
+28. On the left hand side panel, search for NS1, Click on NS1 -> Data Sources & Feeds -> Data Sources -> View active data sources
 	
 	a. Change name to NS1_sources
 
