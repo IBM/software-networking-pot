@@ -1,0 +1,8 @@
+{
+  "label": "RNA Labs",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": " IBM Rapid Networking Automation (RNA) labs provides hands-on examples where we use SevOne and RNA together in a controlled environment.  In this POT, you'll learn the basics of using SevOne NPM and Rapid Network Automation."
+  }
+}
