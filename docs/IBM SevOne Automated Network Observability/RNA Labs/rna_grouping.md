@@ -208,24 +208,10 @@ If SevOne authentication has already been created, please skip this block of act
 
 		ii. value: $Find_Structure.result[0].match.slice(0, 3)
 
-21. Add a new building block, SevOne -> REST v3 -> Device Groups -> Device Groups Create Device Group
-
-	a. Change name to SevOne_Create_Location_Group
-	
-	b. Click on the building block to open the right side panel and complete the following fields
-
-		i. authKey: $NMSCredentials
-
-		ii. body:
-
-			1. name: $name
-
-			2. parentId: $parentid
-
 
 ![IBM SevOne Automated Network Observability](img/rnagroups/Img4.png)	
 
-22. Add a new building block, SevOne -> REST v3 -> Device Groups -> Device Groups Filter Device Groups
+21. Add a new building block, SevOne -> REST v3 -> Device Groups -> Device Groups Filter Device Groups
 
 	a. Change name to SevOne_Find_Location_Group
 	
@@ -240,7 +226,7 @@ If SevOne authentication has already been created, please skip this block of act
 			2. parentIds: [ $parentid ]
 			
 
-23. Add a new building block, Common -> Array -> ArraySize
+22. Add a new building block, Common -> Array -> ArraySize
 
 	a. Change name to ArraySize_Location_Group
 
