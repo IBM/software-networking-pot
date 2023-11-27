@@ -183,7 +183,7 @@ NOTE: we are disabling this building block because when we test this workflow we
 
 14. Add a new building block, SevOne -> REST v3 -> Metadata -> Metadata Devies (POST)
 
-	a. Change name to SevOne_Find_router
+	a. Change name to SevOne_Find_Router
 
 	b. Click on the building block to open the right side panel and complete the following fields
 
@@ -227,7 +227,7 @@ NOTE: we are disabling this building block because when we test this workflow we
 
 						1. On the new line ( 0 ): 
 						
-							a. value: $availability
+							a. value: "availability"
 
 					ii. plugins: ["ICMP"]
 
