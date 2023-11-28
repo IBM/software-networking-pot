@@ -1,0 +1,8 @@
+{
+  "label": "CMDB Integration",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": " IBM Rapid Networking Automation (RNA) CMDB integration labs provides hands-on examples where we show how we can integrate SANO with CMDB tools such as ServiceNow."
+  }
+}
