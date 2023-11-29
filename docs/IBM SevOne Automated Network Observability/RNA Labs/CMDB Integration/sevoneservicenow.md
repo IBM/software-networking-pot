@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Sync SevOne Devices with ServivceNow
+# Sync SevOne Devices with ServiceNow
 
 
 
