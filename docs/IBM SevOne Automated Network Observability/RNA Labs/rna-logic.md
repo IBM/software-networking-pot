@@ -1,5 +1,5 @@
 ---
-sidebar_position: 31
+sidebar_position: 13
 ---
 
 # Rapid Network Automation Logic Lab
