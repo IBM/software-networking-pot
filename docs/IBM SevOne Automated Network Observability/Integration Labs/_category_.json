@@ -1,0 +1,8 @@
+{
+  "label": "Integration Labs",
+  "position": 21,
+  "link": {
+    "type": "generated-index",
+    "description": " These labs cover integrations between Rapid Network Automation and other solutions"
+  }
+}

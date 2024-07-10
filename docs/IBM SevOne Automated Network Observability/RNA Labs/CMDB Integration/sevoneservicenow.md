@@ -183,7 +183,7 @@ If ServiceNow authentication has already been created, please skip this block of
     				"short_description": $ForEach_Device.item.description
 				}
 
-		iv. content_type: "application_json"
+		iv. content_type: "application/json"
 
 ![IBM SevOne Automated Network Observability](img/SevOneSnow/img3.png)
 
