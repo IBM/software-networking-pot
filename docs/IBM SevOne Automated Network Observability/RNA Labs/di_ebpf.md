@@ -76,7 +76,7 @@ These are the steps that we will follow on this lab:
 
 If SevOne authentication has already been created, please skip this block of actions and continue to step 13.
 
-10. Log into SANO automation platform
+10. Log into RNA
 
 11. Go to Authentications
 
@@ -181,7 +181,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		ii. line 111 -> targetHost: "10.0.0.10"
 
-	[Tip: copy and paste small parts of the file otherwise the identation will not be respected and the file will not be correct]
+	[**IMPORTANT TIP**: copy and paste small parts of the file otherwise the identation will not be respected and the file will not be correct]
 
 	i. Press 'Esc' key and then type :wq! to save contents of the file
 
@@ -282,6 +282,8 @@ If SevOne authentication has already been created, please skip this block of act
 			4. Click Run
 
 			5. Edit the size of the widget to use almost all length of the report, and less than half of the width
+
+			[**NOTE**: on new instances, it will take a couple of hours for the TopN report to show data. Don't panic if the TopN widget is empty]
 
 ![IBM SevOne Automated Network Observability](img/ebpf/Img10.png)
 
