@@ -92,8 +92,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: "SevOne NPM 6.8",
-                href: "https://www.ibm.com/docs/en/sevone-npm/6.8",
+                label: "SevOne NPM 7.0",
+                href: "https://www.ibm.com/docs/en/sevone-npm/7.0",
               },
               {
                 label: "AIOps Turbonomic and Instana PoT",

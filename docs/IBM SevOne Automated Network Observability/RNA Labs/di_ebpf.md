@@ -101,17 +101,17 @@ If SevOne authentication has already been created, please skip this block of act
 
 14. Click on Import
 
-	a. Import K8s_DI_Monitoring_Flow_Mapping.zip file (https://ibm.box.com/s/sqnz0nbzzfvci0zuvqfkco8fztmnjk8k)
+	a. Import K8s_DI_Monitoring_Flow_Mapping.zip file **[Download Workflow from IBM Community](https://community.ibm.com/community/user/aiops/viewdocument/data-insight-kubernetes-container-p)**
 
 15. Open workflow SevOne Data Insight Monitoring
 
 	a. Expand Start and make sure the following variables have values
 
-		i. token: default token (using datainsight:datainsight converted to basic64) is "ZGF0YWluc2lnaHQ6ZGF0YWluc2lnaHQ=". If a different combination of user and password is used in a differen DI platform, the new token will need to be converted (https://www.base64encode.org/)
+	i. token: default token (using datainsight:datainsight converted to basic64) is "ZGF0YWluc2lnaHQ6ZGF0YWluc2lnaHQ=". If a different combination of user and password is used in a differen DI platform, the new token will need to be converted **[https://www.base64encode.org/](https://www.base64encode.org/)**
 
-		ii. url: targets the prometheus interface of the DI server "https://10.0.0.11/prometheus". If a different DI system is used, please make sure Prometheus is enabled and the IP is correct
+	ii. url: targets the prometheus interface of the DI server "https://10.0.0.11/prometheus". If a different DI system is used, please make sure Prometheus is enabled and the IP is correct
 
-		iii. NMSCredentials: use the credential configured on step 12 "admin/SevOne" to connect to the SevOne platform to ingest the data (you might need to go to another page)
+	iii. NMSCredentials: use the credential configured on step 12 "admin/SevOne" to connect to the SevOne platform to ingest the data (you might need to go to another page)
 
 16. Click Run to make sure the workflow works properly
 
@@ -165,23 +165,23 @@ If SevOne authentication has already been created, please skip this block of act
 
 	d. vi perms.yaml
 
-	e. Paste the content of this file (https://ibm.box.com/s/ebni5tuvzmmbcel0dujc5jr7h833i1g7)
+	e. Paste the content of this file **[Link to Box File](https://ibm.box.com/s/ebni5tuvzmmbcel0dujc5jr7h833i1g7)**
 
 	[Tip: use the 'Send Text' functionality available in the window]
 
 ![IBM SevOne Automated Network Observability](img/ebpf/Img6.png)
 
-	f. Press 'Esc' key and then type :wq! to save contents of the file
+f. Press 'Esc' key and then type :wq! to save contents of the file
 
-	g. vi flp-daemonset.yaml
-
-	h. Paste the content of this file (https://ibm.box.com/s/q8u0cgwkhj6h3tomxomaz012a0no1wv6) editing the following two values:
+g. vi flp-daemonset.yaml
+	
+h. Paste the content of this file **[Link to Box File](https://ibm.box.com/s/q8u0cgwkhj6h3tomxomaz012a0no1wv6)** editing the following two values:
 
 		i. line 97 -> KubeConfigPath: /home/sevone/kubeconfig.yaml
 
 		ii. line 111 -> targetHost: "10.0.0.10"
 
-	[**IMPORTANT TIP**: copy and paste small parts of the file otherwise the identation will not be respected and the file will not be correct]
+**IMPORTANT TIP**: copy and paste small parts of the file otherwise the identation will not be respected and the file will not be correct
 
 	i. Press 'Esc' key and then type :wq! to save contents of the file
 
@@ -283,7 +283,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 			5. Edit the size of the widget to use almost all length of the report, and less than half of the width
 
-			[**NOTE**: on new instances, it will take a couple of hours for the TopN report to show data. Don't panic if the TopN widget is empty]
+	**NOTE** : on new instances, it will take a couple of hours for the TopN report to show data. Don't panic if the TopN widget is empty
 
 ![IBM SevOne Automated Network Observability](img/ebpf/Img10.png)
 
@@ -297,7 +297,7 @@ If SevOne authentication has already been created, please skip this block of act
 
 		iii. On the Performance Metrics widget, click on the + icon and select Flow
 
-		[Note: In Di 7.0.0 there is a bug that doesn't show flow data, continue to the next step to display some data]
+**Note** : In Di 7.0.0 there is a bug that doesn't show flow data, continue to the next step to display some data]
 
 37. Save the report
 
