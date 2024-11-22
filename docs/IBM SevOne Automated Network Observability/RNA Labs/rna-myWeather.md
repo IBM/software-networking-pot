@@ -307,6 +307,9 @@ Drag the ***SevOne Ingest Data - APIv3*** action block into the workflow under t
 
 > You are passing the $content payload that you constructed along with the $NMSCredentials to the ***SevOne Ingest Data - APIv3*** action block so that it can ingest the data into SevOne using its API.
 
+***[G] Run your workflow!***
+Your workflow should complete without errors. 
+
 ### [6] Login to IBM SevOne Data Insight and view your results
 > Now you can login into SevOne Data Insight and see your results!
 
