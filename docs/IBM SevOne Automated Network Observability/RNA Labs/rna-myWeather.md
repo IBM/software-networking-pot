@@ -266,13 +266,13 @@ Next, add an ***Assign*** block underneath the timestamp block so we can assign 
 ***[E] Construct the SevOne API JSON object***
 > You are close to completion!  You now need to construct the SevOne payload using the values you've accumulated.
 
-> The SevOne API payload format requires some nested JSON objects.  So you need to create that structure first.
+> The SevOne API payload format requires a nested JSON object.  So you need to create that structure first.
 
-Add an ***Assign*** block underneath the "populate content" comment so we can create the first nested object.
+Add an ***Assign*** block underneath the "populate content" comment so we can create the nested object.
 
 ![Image](img/LAB_myWeather/_main_content-object1.png)
 
-Add another ***Assign*** block underneath the previous one second nested object.
+Add another ***Assign*** block underneath the previous one for an array.
 
 ![Image](img/LAB_myWeather/_main_content-object2.png)
 
