@@ -2,7 +2,7 @@
 sidebar_position: 15
 ---
 
-# myWeather Lab -- DRAFT
+# myWeather Lab
 
 ## Overview
 
