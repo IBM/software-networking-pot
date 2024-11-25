@@ -8,6 +8,9 @@ sidebar_position: 4
 
 In this lab, you will create a ***weather station collector*** workflow using data from ***api.weather.gov***.  Once you collect the weather information, you will transform the data into a JSON object that will then be ingested into IBM's SevOne observability solution.
 
+![Image](img/LAB_myWeather/weatherStation.png)
+
+
 As you create your ***weather station collector*** you will be using a design pattern where you have a main workflow that will call sub-workflows ("subflows") to accomplish certain tasks.  Think of ***subflows*** like functions that can be used to break up development into smaller discrete items.  You can reuse ***subflows*** that you have written in the past, or use those written by others so you don't have to start from scratch.   
 
 The _main_ workflow for this lab will be called ***Weather Collector***.
