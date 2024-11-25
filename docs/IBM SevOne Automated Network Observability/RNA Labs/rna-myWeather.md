@@ -59,7 +59,7 @@ It will use the following two _subflows_ to accomplish some of its tasks:
 ```
 ```
 - Name: NMSCredentials
-- Type: Password
+- Type: Authentication
 - Default Value: "admin/sevone"
 ```
 
