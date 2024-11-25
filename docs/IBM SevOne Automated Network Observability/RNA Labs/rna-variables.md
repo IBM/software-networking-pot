@@ -18,7 +18,7 @@ You will then pass it to an IBM Community workflow that will import the data int
 - Protocol: http://
 - IP: 10.0.0.10
 - User: admin
-- Password: SevOne
+- Password: _your password here_
 ```
 
 ### [2] Create a new workflow

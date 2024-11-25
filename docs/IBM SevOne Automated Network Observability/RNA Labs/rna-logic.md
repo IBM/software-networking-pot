@@ -26,7 +26,7 @@ If found, the device name will be printed out in the log viewer.
 - Protocol: http://
 - IP: 10.0.0.10
 - User: admin
-- Password: SevOne
+- Password: _your password here_
 ```
 
 ### [2] Create a new workflow
