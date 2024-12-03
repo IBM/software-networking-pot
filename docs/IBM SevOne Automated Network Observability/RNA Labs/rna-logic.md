@@ -30,7 +30,7 @@ If found, the device name will be printed out in the log viewer.
 ```
 
 ### [2] Create a new workflow
-1. Add building block SevOne-> API v3-> Metadata -> Metadata Devices (POST)
+1. Add building block SevOne -> REST v3 -> Metadata -> Metadata Devices (POST)
 2. Change authentication to the one created above
 3. Add a ForEach loop
 ```

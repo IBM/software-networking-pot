@@ -16,7 +16,7 @@ As you create your ***weather station collector*** you will be using a design pa
 The _main_ workflow for this lab will be called ***Weather Collector***.
 It will use the following two _subflows_ to accomplish some of its tasks:
 - ***get weather*** - You will construct this workflow to retrieve current weather info from ***api.weather.gov*** 
-- ***SevOne Ingest Data - APIv3*** - You will retrieve this reusable workflow from https://community.ibm.com/community/user/aiops/viewdocument/sevone-data-ingestion-api-v3?CommunityKey=fe9d91df-352c-4846-9060-189fd98d00ca&tab=librarydocuments 
+- ***SevOne Ingest Data - APIV3- You will retrieve this reusable workflow from https://community.ibm.com/community/user/aiops/viewdocument/sevone-data-ingestion-api-v3?CommunityKey=fe9d91df-352c-4846-9060-189fd98d00ca&tab=librarydocuments 
 
 ## Steps:
 ### [1] Create an authentication called ***sevone*** to connect to the SevOne NMS
