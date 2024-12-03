@@ -15,6 +15,7 @@ You will then pass it to an IBM Community workflow that will import the data int
 ## Steps:
 ### [1] Create an authentication to connect to the SevOne NMS
 ```
+- Authentication name: SevOne
 - Protocol: http://
 - IP: 10.0.0.10
 - User: admin
