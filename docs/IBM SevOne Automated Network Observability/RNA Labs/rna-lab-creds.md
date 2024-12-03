@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# IBM Rapid Network Automation Lab Credentials
+# Lab Credentials
 
-## Login Info
+## Login Information
 
 ***SevOne*** - NPM Lab with IBM Rapid Network Automation Credentials
 
