@@ -71,7 +71,7 @@ appears there, mine was 1710950061
 6. Add another Assign action block:
 ```
 - Variable: $body['device1']['object1'][1]['timestamp1']['indicatorname']
-- Value: [1, 'Number', 'GAUGE’]
+- Value: [1, 'Number', 'GAUGE']
 ```
 ![Image](img/Lab_Variables/body4a.png)
 > NOTE: In this step, we have not created a new nested key-value pair--we have added a new one to the key 'timestamp1', meaning that the value of the key 'timestamp1' will be an object with two key-value pairs inside:  “timestamp” and “indicatorname”.
