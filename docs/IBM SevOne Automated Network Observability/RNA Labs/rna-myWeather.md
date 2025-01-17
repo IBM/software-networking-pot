@@ -275,6 +275,8 @@ Add an ***Assign*** block underneath the "populate content" comment so we can cr
 
 ![Image](img/LAB_myWeather/_main_content-object1.png)
 
+NOTE: In the editor, replace [Object] with {} 
+
 Add another ***Assign*** block underneath the previous one for an array.
 
 ![Image](img/LAB_myWeather/_main_content-object2.png)
